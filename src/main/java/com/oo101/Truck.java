@@ -2,8 +2,9 @@ package com.oo101;
 
 public class Truck extends Vehicle{
 
-    public Truck(String name, Integer speed) {
-        super(name, speed);
+    private Engine engine;
+    public Truck(String name, Engine engine) {
+        super(name, engine.getSpeed());
     }
 
 
